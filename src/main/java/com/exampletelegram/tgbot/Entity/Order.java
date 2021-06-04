@@ -1,23 +1,17 @@
 package com.exampletelegram.tgbot.Entity;
 
-import javax.persistence.Entity;
+public class Order { //Просто класс "Заказ"
 
-public class Order {
-
-    private Integer id;
-    private String itemName;
-    private Integer price;
-    private String statusOrder;
+    private Integer id; //Переменная целочисленного типа id
+    private String itemName; //Строка имя товара
+    private Integer price; //цена
+    private String statusOrder; //статус заказа
 
     public Order() {
     }
 
-    public Order(String itemName, Integer price, String statusOrder) {
-        this.itemName = itemName;
-        this.price = price;
-        this.statusOrder = statusOrder;
-    }
-
+    //get -> значит получить Id    getId - значит получить id
+    //set -> значит присвоить setId (значит присвоить id)
     public Integer getId() {
         return id;
     }
@@ -51,6 +45,8 @@ public class Order {
         this.statusOrder = statusOrder;
     }
 
+
+    //Это нужно чтобы не приводить и не писать при выводе объекта .toString(), переобпределяем здесь, чтобы добиться читаемости обеъкта
     @Override
     public String toString() {
         return  "\nНазвание товара= " + itemName +
