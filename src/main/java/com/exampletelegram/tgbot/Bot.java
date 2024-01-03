@@ -16,7 +16,7 @@ package com.exampletelegram.tgbot;
 @Component
 public class Bot extends TelegramLongPollingBot {
 
-    private static String TOKEN = "1851881145:AAFwx0V6u0ayo2b-IzuSdpSkLudhghPNG4U"; //ТОКЕН
+    private static String TOKEN = "185G4U"; //ТОКЕН
     private static String NAME = "mewShop_bot"; //НАЗВАНИЕ БОТА
     private static String status = ""; //ПЕРЕМЕННАЯ СТАТУС
     // static означает, что он принадлежит классу и, следовательно, является общим для всех экземпляров
